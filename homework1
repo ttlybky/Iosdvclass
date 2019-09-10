@@ -1,0 +1,33 @@
+import Foundation
+
+struct card{ var type:Int; var num:Int; } 
+
+var card_list:[card]=[] var index:[Int]=[] 
+
+var cur_index:Int=0 
+for i in 0..<13{ 
+for j in 0..<4{ 
+let lcard=card(type:j,num:i) 
+card_list.append(lcard) 
+}
+}
+
+func gen_index(){ 
+var lindex:[Int]=[] 
+for i in 0..<52{ 
+lindex.append(i)
+}
+for i in 0..<52{ 
+var len=52-i var l=Int.random(in: 0..<len) 
+index.append(lindex[l])
+lindex.remove(at:l) } 
+} gen_index()
+
+var color=["Spade","Heart","Club","Diamond"] 
+var NUM=["A","2","3","4","5","6","7","8","9","10","J","Q","K"] 
+func getCard()->(){ var lcard:card=card_list[index[cur_index]];
+print(color[lcard.type],NUM[lcard.num]) cur_index+=1 } 
+// getCard()
+var playerNUM:Int=0;
+
+for i in 0..<4{ print("the (i+1)th player") for i in 0..<13{ getCard(); } }
