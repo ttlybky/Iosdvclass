@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HelloWorld" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3fM-se-QRY">
+                                <rect key="frame" x="56" y="230" width="70" height="67"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.24477886339999999" green="0.51331544139999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2Wq-GR-Zgl">
+                                <rect key="frame" x="178" y="230" width="70" height="67"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.14646641930000001" blue="0.12870779339999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mTy-9v-zTr">
+                                <rect key="frame" x="294" y="230" width="70" height="67"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="联系人姓名" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="8s1-Ey-d80">
+                                <rect key="frame" x="167" y="179" width="96" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="P8e-PB-uFy">
+                                <rect key="frame" x="132" y="74" width="150" height="95"/>
+                                <color key="backgroundColor" red="1" green="0.14646641930000001" blue="0.12870779339999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="95" id="GFP-Aq-Nqw"/>
+                                    <constraint firstAttribute="width" constant="150" id="i39-UV-h8D"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="l2m-7Y-Osq">
+                                <rect key="frame" x="41" y="350" width="342" height="50"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="电话" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Stw-Y6-NPc">
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="50"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="IAC-uW-uhB"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="短信" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="1H7-Zv-W0x">
+                                        <rect key="frame" x="116" y="0.0" width="110" height="50"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="邮箱" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="yEW-RL-XIS">
+                                        <rect key="frame" x="242" y="0.0" width="100" height="50"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="7xh-OI-1GR"/>
+                                    <constraint firstItem="1H7-Zv-W0x" firstAttribute="centerX" secondItem="l2m-7Y-Osq" secondAttribute="centerX" id="7y8-9Q-OFV"/>
+                                    <constraint firstItem="yEW-RL-XIS" firstAttribute="centerY" secondItem="l2m-7Y-Osq" secondAttribute="centerY" id="8lE-py-sTq"/>
+                                    <constraint firstItem="Stw-Y6-NPc" firstAttribute="centerY" secondItem="l2m-7Y-Osq" secondAttribute="centerY" id="CLk-lv-gbW"/>
+                                    <constraint firstItem="1H7-Zv-W0x" firstAttribute="centerY" secondItem="l2m-7Y-Osq" secondAttribute="centerY" id="JhT-vr-Oju"/>
+                                    <constraint firstAttribute="width" constant="342" id="MZY-ZO-ZL0"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="130" translatesAutoresizingMaskIntoConstraints="NO" id="Adb-w8-0ck">
+                                <rect key="frame" x="65" y="782" width="284" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rZl-lu-AcF">
+                                        <rect key="frame" x="0.0" y="0.0" width="77" height="30"/>
+                                        <state key="normal" title="新建联系人"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q9s-a6-Dbr">
+                                        <rect key="frame" x="207" y="0.0" width="77" height="30"/>
+                                        <state key="normal" title="删除联系人"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="lpa-2S-Dsz">
+                                <rect key="frame" x="30" y="420" width="324" height="234"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" semanticContentAttribute="spatial" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="EIL-7K-UUj">
+                                        <rect key="frame" x="0.0" y="0.0" width="82" height="234"/>
+                                        <subviews>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="手机：" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="U2g-ub-PjZ">
+                                                <rect key="frame" x="0.0" y="0.0" width="82" height="78"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="82" id="vuQ-OW-Q3G"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="家庭：" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="M2h-6P-6Wc">
+                                                <rect key="frame" x="0.0" y="78" width="82" height="78"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="工作：" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="nSP-9V-nZT">
+                                                <rect key="frame" x="0.0" y="156" width="82" height="78"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="82" id="rHz-0D-0mD"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="M2h-6P-6Wc" firstAttribute="centerY" secondItem="EIL-7K-UUj" secondAttribute="centerY" id="PGm-Qw-TNa"/>
+                                            <constraint firstAttribute="width" constant="82" id="d7D-BJ-3r0"/>
+                                            <constraint firstAttribute="height" constant="234" id="pju-No-UGN"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="55" translatesAutoresizingMaskIntoConstraints="NO" id="2Z4-NK-Ll4">
+                                        <rect key="frame" x="102" y="0.0" width="222" height="200"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="x98-M0-VMD">
+                                                <rect key="frame" x="0.0" y="0.0" width="222" height="30"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iyH-br-apa">
+                                                <rect key="frame" x="0.0" y="85" width="222" height="30"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Soi-bz-3sA">
+                                                <rect key="frame" x="0.0" y="170" width="222" height="30"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="222" id="wjm-oy-lx9"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="324" id="UXt-O9-EwA"/>
+                                    <constraint firstAttribute="height" constant="234" id="uuu-cb-8nV"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="lpa-2S-Dsz" firstAttribute="top" secondItem="l2m-7Y-Osq" secondAttribute="bottom" constant="20" id="6wM-ep-300"/>
+                            <constraint firstItem="Adb-w8-0ck" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="AHh-3F-SsQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Adb-w8-0ck" secondAttribute="bottom" constant="50" id="DVz-af-DVE"/>
+                            <constraint firstItem="l2m-7Y-Osq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="41" id="G2m-B9-QkA"/>
+                            <constraint firstItem="Adb-w8-0ck" firstAttribute="top" secondItem="lpa-2S-Dsz" secondAttribute="bottom" constant="128" id="N2w-NQ-Kwn"/>
+                            <constraint firstItem="P8e-PB-uFy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OJp-3K-UuY"/>
+                            <constraint firstItem="lpa-2S-Dsz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="qjk-d6-e3g"/>
+                            <constraint firstItem="P8e-PB-uFy" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="t5B-eM-RJM"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="85.714285714285708"/>
+        </scene>
+    </scenes>
+</document>
